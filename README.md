@@ -1,2 +1,17 @@
-# CNPM_NHOM8_QUAN LY DON HANG QUAN AN
-Dự án “Quản lý đơn hàng quán ăn” được xây dựng nhằm hỗ trợ các quán ăn tối ưu quy trình bán hàng, giảm sai sót thủ công và nâng cao hiệu quả vận hành. Hệ thống giúp nhân viên ghi nhận order nhanh chóng, theo dõi trạng thái món ăn, quản lý bàn và thanh toán một cách thuận tiện, góp phần nâng cao trải nghiệm khách hàng.
+# 📌 DỰ ÁN: QUẢN LÍ ĐƠN HÀNG QUÁN ĂN
+
+## 👀 Tầm nhìn sản phẩm (Product Vision)
+Xây dựng hệ thống quản lí đơn hàng quán ăn giúp chủ quán và nhân viên:
+- Ghi nhận đơn hàng nhanh chóng
+- Quản lí món ăn, giá cả
+- Theo dõi trạng thái đơn hàng
+- Giảm sai sót khi ghi order thủ công
+- Tăng hiệu quả phục vụ khách hàng
+
+## 🎯 Đối tượng sử dụng
+- Chủ quán ăn
+- Nhân viên phục vụ
+- Nhân viên thu ngân
+
+## 👥 Thành viên nhóm
+(Sẽ được các thành viên cập nhật ở các Pull Request)

@@ -15,3 +15,7 @@ Xây dựng hệ thống quản lí đơn hàng quán ăn giúp chủ quán và 
 
 ## 👥 Thành viên nhóm
 (Sẽ được các thành viên cập nhật ở các Pull Request)
+## 👥 Thành viên nhóm
+- Alăng Along – MSSV: 24S1020001 
+  GitHub: https://github.com/sunlz1711980-arch
+

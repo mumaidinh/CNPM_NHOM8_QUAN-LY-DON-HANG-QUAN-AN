@@ -25,5 +25,5 @@ Xây dựng hệ thống quản lí đơn hàng quán ăn giúp chủ quán và 
 - GitHub: https://github.com/quangvinh020906-byte
 3. Họ và tên:
   Huỳnh Giang Sơn
--Mã sinh viên: 24S1020067
--Github: https://github.com/Sothienthu2006
+ -Mã sinh viên: 24S1020067
+ -Github: https://github.com/Sothienthu2006

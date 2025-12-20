@@ -2,7 +2,6 @@
 users = []
 current_user = None
 
-
 def entry_ui():
     global current_user
 

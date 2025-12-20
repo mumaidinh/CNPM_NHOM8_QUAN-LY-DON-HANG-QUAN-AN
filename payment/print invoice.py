@@ -1,3 +1,4 @@
+from datetime import datetime
 def print_invoice(order, payment_method):
     print("\n===== HÓA ĐƠN THANH TOÁN =====")
     print(f"Mã đơn: {order.order_id}")

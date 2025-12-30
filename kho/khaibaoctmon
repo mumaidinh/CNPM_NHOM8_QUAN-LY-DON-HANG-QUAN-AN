@@ -1,0 +1,21 @@
+def them_cong_thuc_mon():
+    print("\n--- THÊM CÔNG THỨC MÓN ---")
+    ten_mon = input("Tên món: ")
+    danh_sach_nl = []
+
+    while True:
+        ten_nl = input("Tên nguyên liệu (enter để dừng): ")
+        if ten_nl == "":
+            break
+        so_luong = float(input("Số lượng cần: "))
+        danh_sach_nl.append({
+            "ten": ten_nl,
+            "so_luong": so_luong
+        })
+
+    cong_thuc_mon.append({
+        "ten_mon": ten_mon,
+        "nguyen_lieu": danh_sach_nl
+    })
+
+    print("✅ Đã thêm công thức!")

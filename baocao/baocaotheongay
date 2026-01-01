@@ -1,0 +1,9 @@
+def bao_cao_doanh_thu_theo_ngay():
+    ngay_can_xem = input("Nhập ngày (YYYY-MM-DD): ")
+    tong = 0
+
+    for don in don_hang_list:
+        if don["ngay"] == ngay_can_xem and don["trang_thai"] == "Hoàn thành":
+            tong += don["tong_tien"]
+
+    print(f"📅 Doanh thu ngày {ngay_can_xem}: {tong} VNĐ")

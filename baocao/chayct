@@ -1,0 +1,23 @@
+def menu_bao_cao():
+    while True:
+        print("\n=== BÁO CÁO ===")
+        print("1. Doanh thu theo ngày")
+        print("2. Doanh thu theo tháng")
+        print("3. Món bán chạy")
+        print("4. In hóa đơn")
+        print("0. Quay lại")
+
+        chon = input("Chọn: ")
+
+        if chon == "1":
+            bao_cao_doanh_thu_theo_ngay()
+        elif chon == "2":
+            bao_cao_doanh_thu_theo_thang()
+        elif chon == "3":
+            bao_cao_mon_ban_chay()
+        elif chon == "4":
+            in_hoa_don()
+        elif chon == "0":
+            break
+        else:
+            print("❌ Lựa chọn không hợp lệ")

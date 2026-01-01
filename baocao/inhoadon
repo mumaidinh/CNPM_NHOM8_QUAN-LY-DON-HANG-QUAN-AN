@@ -5,7 +5,7 @@ def in_hoa_don():
         if don["ma_don"] == ma_don:
             print("\n====== HÓA ĐƠN ======")
             print(f"Mã đơn: {don['ma_don']}")
-            print(f>Khách hàng: {don['ten_khach']}")
+            print(f"Khách hàng: {don['ten_khach']}")
             print(f"Loại đơn: {don['loai']}")
             print(f"Ngày: {don['ngay']}")
             print("Món:")

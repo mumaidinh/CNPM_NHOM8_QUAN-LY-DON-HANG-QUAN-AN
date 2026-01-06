@@ -21,3 +21,13 @@ def hien_thi_menu(menu_list):
         )
 
     print("=" * 80)
+    # ================== HIỂN THỊ MÓN CÒN BÁN ==================
+def hien_thi_menu_con_ban(menu_list):
+    ds_con_ban = [mon for mon in menu_list if mon["trang_thai"] == "Còn bán"]
+
+    if not ds_con_ban:
+        print("Hiện không có món nào còn bán.")
+        return
+
+    hien_thi_menu(ds_con_ban)
+

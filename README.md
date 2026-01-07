@@ -11,13 +11,11 @@ Xây dựng hệ thống quản lí đơn hàng quán ăn giúp chủ quán và 
  🎯 Đối tượng sử dụng
 - Chủ quán ăn
 - Nhân viên phục vụ
-- Nhân viên thu ngân
-
 
 👥 Thành viên nhóm:
 1. Họ và tên:
    Alăng Along
-- MSSV: 24S1020001 
+- Mã sinh viên: 24S1020001 
 - Link GitHub: https://github.com/sunlz1711980-arch
 2. Họ và tên:
   Bùi Quang Vinh 

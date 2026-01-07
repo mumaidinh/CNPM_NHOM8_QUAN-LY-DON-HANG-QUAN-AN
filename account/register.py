@@ -1,27 +1,47 @@
-# US-001: Đăng ký tài khoản
-def register(users):
-    print("\n====== ĐĂNG KÝ TÀI KHOẢN ======")
+def register():
+    while True:
+        username = input("Tên đăng ký: ").strip()
+        if username == "":
+            print("❌ Tên đăng nhập không được để trống!")
+            continue
 
-    username = input("Nhập tên đăng nhập: ")
+        if any(u["username"] == username for u in users):
+            print("❌ Username đã tồn tại!")
+            continue
+        break
 
-    # Kiểm tra trùng username
-    for user in users:
-        if user["username"] == username:
-            print("❌ Tên đăng nhập đã tồn tại!")
-            return
+    while True:
+        password = input("Mật khẩu: ").strip()
+        if password == "":
+            print("❌ Mật khẩu không được để trống!")
+            continue
 
-    password = input("Nhập mật khẩu: ")
-    confirm_password = input("Nhập lại mật khẩu: ")
+        confirm = input("Nhập lại mật khẩu: ").strip()
+        if confirm != password:
+            print("❌ Mật khẩu không khớp!")
+            continue
+        break
 
-    # Kiểm tra xác nhận mật khẩu
-    if password != confirm_password:
-        print("❌ Mật khẩu không khớp!")
-        return
+    while True:
+        print("Chọn loại tài khoản:")
+        print("1. Quản lý")
+        print("2. Nhân viên")
+        role = input("Lựa chọn: ").strip()
 
-    # Lưu user
+        if role == "1":
+            role = "quan_ly"
+            break
+        elif role == "2":
+            role = "nhan_vien"
+            break
+        else:
+            print("❌ Lựa chọn không hợp lệ!")
+
     users.append({
         "username": username,
-        "password": password
+        "password": password,
+        "role": role
     })
 
+    save_data()
     print("✅ Đăng ký thành công!")

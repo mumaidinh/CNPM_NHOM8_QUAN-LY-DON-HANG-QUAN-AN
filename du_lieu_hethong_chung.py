@@ -162,7 +162,5 @@ def main():
             print("❌ Lựa chọn không hợp lệ!")
             input("Nhấn Enter để tiếp tục...")
 
-
-
 if __name__ == "__main__":
     main()

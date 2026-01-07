@@ -1,0 +1,50 @@
+# ================== BÁO CÁO ==================
+def menu_bao_cao():
+    while True:
+        clear_screen()
+        print("=== BÁO CÁO DOANH THU ===")
+        print("1. Báo cáo theo ngày")
+        print("2. Báo cáo theo tháng")
+        print("0. Quay lại")
+
+        c = nhap_lua_chon(["1","2","0"])
+
+        if c == "1":
+            clear_screen()
+            print("=== BÁO CÁO THEO NGÀY ===")
+
+            ngay = input("Nhập ngày (DD): ").zfill(2)
+            thang = input("Nhập tháng (MM): ").zfill(2)
+            nam = input("Nhập năm (YYYY): ")
+
+            key_ngay = f"{nam}-{thang}-{ngay}"
+
+            tong = sum(
+                d["tong_tien"]
+                for d in don_hang_list
+                if d.get("ngay") == key_ngay and d["trang_thai"] == "Hoàn thành"
+            )
+
+            print(f"\n💰 Doanh thu ngày {key_ngay}: {tong}")
+            pause()
+
+        elif c == "2":
+            clear_screen()
+            print("=== BÁO CÁO THEO THÁNG ===")
+
+            thang = input("Nhập tháng (MM): ").zfill(2)
+            nam = input("Nhập năm (YYYY): ")
+
+            key_thang = f"{nam}-{thang}"
+
+            tong = sum(
+                d["tong_tien"]
+                for d in don_hang_list
+                if d.get("thang") == key_thang and d["trang_thai"] == "Hoàn thành"
+            )
+
+            print(f"\n💰 Doanh thu tháng {key_thang}: {tong}")
+            pause()
+
+        elif c == "0":
+            break

@@ -1,0 +1,17 @@
+elif c == "2":
+            clear_screen()
+            print("=== BÁO CÁO THEO THÁNG ===")
+
+            thang = input("Nhập tháng (MM): ").zfill(2)
+            nam = input("Nhập năm (YYYY): ")
+
+            key_thang = f"{nam}-{thang}"
+
+            tong = sum(
+                d["tong_tien"]
+                for d in don_hang_list
+                if d.get("thang") == key_thang and d["trang_thai"] == "Hoàn thành"
+            )
+
+            print(f"\n💰 Doanh thu tháng {key_thang}: {tong}")
+            pause()

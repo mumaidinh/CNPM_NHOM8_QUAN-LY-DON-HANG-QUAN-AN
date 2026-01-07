@@ -1,0 +1,10 @@
+# ================== QUẢN LÝ KHO ==================
+def nhap_kho():
+    ten = input("Nguyên liệu: ").lower()
+    sl = int(input("Số lượng: "))
+    for nl in kho_nguyen_lieu:
+        if nl["ten"] == ten:
+            nl["so_luong"] += sl
+            return
+    kho_nguyen_lieu.append({"ten": ten, "so_luong": sl})
+    save_data()

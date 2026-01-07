@@ -1,20 +1,60 @@
 {
     "users": [
         {
- feature/add-vinh
-            "username": "vinh",
-            "password": "123",
+            "username": "t",
+            "password": "1",
             "role": "nhan_vien"
-=======
-            "username": "Long",
-            "password": "1234",
-            "role": "quan_ly"
-main
         }
     ],
-    "menu_list": [],
+    "menu_list": [
+        {
+            "id": 1,
+            "ten_mon": "gà",
+            "gia": 100,
+            "loai": "đồ ăn",
+            "trang_thai": "Còn hàng"
+        },
+        {
+            "id": 2,
+            "ten_mon": "vịt",
+            "gia": 200,
+            "loai": "đồ ăn",
+            "trang_thai": "Còn hàng"
+        },
+        {
+            "id": 3,
+            "ten_mon": "ốc",
+            "gia": 300,
+            "loai": "đồ ăn",
+            "trang_thai": "Còn hàng"
+        },
+        {
+            "id": 4,
+            "ten_mon": "nước ép dứa",
+            "gia": 50,
+            "loai": "thức uống",
+            "trang_thai": "Còn hàng"
+        }
+    ],
     "don_hang_list": [],
     "ma_don_tu_tang": 1,
     "ban_list": [],
-    "kho_nguyen_lieu": []
+    "kho_nguyen_lieu": [
+        {
+            "ten": "gà",
+            "so_luong": 100
+        },
+        {
+            "ten": "vịt",
+            "so_luong": 100
+        },
+        {
+            "ten": "ốc",
+            "so_luong": 150
+        },
+        {
+            "ten": "nước ép dứa",
+            "so_luong": 50
+        }
+    ]
 }

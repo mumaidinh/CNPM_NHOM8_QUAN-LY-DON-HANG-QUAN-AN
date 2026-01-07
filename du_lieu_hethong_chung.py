@@ -92,3 +92,77 @@ def nhap_lua_chon(hop_le):
             print("❌ Lựa chọn không hợp lệ! Vui lòng nhập đúng chức năng.")
             continue
         return chon
+# ================== HỆ THỐNG CHÍNH ==================
+def main_menu():
+    while True:
+        print("\n" + "★"*10 + " MENU QUẢN LÝ " + "★"*10)
+        print("1. Món ăn\n2. Đơn hàng\n3. Bàn\n4. Kho\n5. Thanh toán\n6. Báo cáo\n7. Đăng xuất")
+        c = nhap_lua_chon(["1","2","3","4","5","6","7"])
+        if c == "1":
+            clear_screen()
+            menu_quan_ly_menu()
+
+        elif c == "2":
+            clear_screen()
+            menu_quan_ly_don_hang()
+
+        elif c == "3":
+            clear_screen()
+            menu_quan_ly_ban()
+
+        elif c == "4":
+            clear_screen()
+            menu_quan_ly_kho()
+
+        elif c == "5":
+            clear_screen()
+            menu_thanh_toan()
+            pause()
+
+        elif c == "6":
+            clear_screen()
+            menu_bao_cao()
+            pause()
+def main():
+    load_data()
+    while True:
+        clear_screen()
+        hien_thi_chao_mung()   
+
+        chon = nhap_lua_chon(["1", "2", "3", "4"])
+
+
+        if chon == "1":  # Đăng nhập
+            clear_screen()
+            print("=== ĐĂNG NHẬP TÀI KHOẢN ===")
+            if login():
+                if current_user["role"] == "quan_ly":
+                    menu_quan_ly()
+                else:
+                    menu_nhan_vien()
+
+
+        elif chon == "2":  # Đăng ký
+            clear_screen()
+            print("=== ĐĂNG KÝ TÀI KHOẢN ===")
+            register()
+            input("\nNhấn Enter để quay lại...")
+
+        elif chon == "3":
+            clear_screen()
+            quen_mat_khau()
+            input("\nNhấn Enter để quay lại...")
+
+
+        elif chon == "4":
+            print("👋 Tạm biệt!")
+            break
+
+        else:
+            print("❌ Lựa chọn không hợp lệ!")
+            input("Nhấn Enter để tiếp tục...")
+
+
+
+if __name__ == "__main__":
+    main()
